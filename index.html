@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia Analogica Siena | Lezioni e Metodo</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2b2b2b;
+            --accent-color: #c0392b;
+            --border-color: #d1cfcb;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--text-color);
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 2px 2px 0px var(--border-color);
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-top: 1rem;
+            display: block;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            aspect-ratio: 2/3;
+            background-color: #eae8e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            margin-top: 2rem;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fotografia Analogica</h1>
+        <p>Lezioni private a Siena. Da zero allo sviluppo digitale autonomo.</p>
+    </header>
+
+    <div class="container">
+        <section id="metodo">
+            <h2>Il Metodo: Indipendenza Totale</h2>
+            <p>La fotografia a pellicola non deve essere un lusso insostenibile. L'obiettivo delle lezioni è fornirti un metodo end-to-end che azzeri i costi di scansione e stampa dei laboratori commerciali.</p>
+            <ul>
+                <li><strong>Ripresa:</strong> Padronanza meccanica delle reflex 35mm (focus su corpi manuali/semi-automatici come Canon AT-1 e AE-1).</li>
+                <li><strong>Esposizione:</strong> Gestione della luce e versatilità delle emulsioni standard (es. Fujifilm ISO 400) anche con la regola del Sunny 16.</li>
+                <li><strong>Digitalizzazione:</strong> Allestimento di un setup di acquisizione ottica casalingo con reflex digitale, lente macro e pannello retroilluminato.</li>
+                <li><strong>Automazione:</strong> Post-produzione strutturata tramite script di inversione colore e calibrazione con Grain2Pixel su Photoshop.</li>
+            </ul>
+        </section>
+
+        <section id="servizi">
+            <h2>Moduli e Tariffe</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Lezione Modulare (1 Ora)</h3>
+                    <p>Sessione intensiva focalizzata su una singola lacuna tecnica. Ideale per il troubleshooting, il caricamento del rullino a tenuta di luce, o il setup del software di inversione.</p>
+                    <span class="price">€15 / ora</span>
+                </div>
+                <div class="card">
+                    <h3>Corso Completo (3-4 Ore)</h3>
+                    <p>Percorso strutturato in tre fasi: teoria dell'esposizione, camminata fotografica urbana a Siena per testare le transizioni di luce, e sessione al computer per l'impostazione degli script di acquisizione.</p>
+                    <span class="price">€50 - €60 pacchetto</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio Scansioni</h2>
+            <p>Esempi di digitalizzazione ibrida 35mm. Workflow: Negative C-41 &rarr; DSLR Scan &rarr; Grain2Pixel.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">Scansione 01</div>
+                <div class="portfolio-item">Scansione 02</div>
+                <div class="portfolio-item">Scansione 03</div>
+            </div>
+        </section>
+
+        <section id="contatti" style="text-align: center;">
+            <h2>Inizia il Percorso</h2>
+            <p>Pronto a scattare in pellicola senza dipendere dai laboratori?</p>
+            <a href="mailto:tuamail@esempio.com" class="btn">Contattami via Email</a>
+            <p style="margin-top: 1.5rem;">Oppure scrivimi su Instagram: <strong>@tuo_profilo</strong></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Lezioni di Fotografia Analogica | Siena</p>
+    </footer>
+
+</body>
+</html>
